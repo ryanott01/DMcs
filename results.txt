@@ -1,0 +1,31 @@
+First test
+
+Results for the extraLargeArray
+insert 781.417291 ms
+append 2.089125 ms
+
+Second test
+
+Size: tiny
+Append: 0.050917ms
+Insert: 0.022ms
+
+Size: small
+Append: 0.007042ms
+Insert: 0.008417ms
+
+Size: medium
+Append: 0.029290999999999998ms
+Insert: 0.10016699999999999ms
+
+Size: large
+Append: 0.27991699999999997ms
+Insert: 6.848541ms
+
+Size: extraLarge
+Append: 1.789583ms
+Insert: 776.5944159999999ms
+
+
+The unshift method takes time to reindex all of the elements that are aleady there, meaning as you get more data it will
+bog down drastically. It is more efficient to use the push method.
